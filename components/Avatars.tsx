@@ -13,8 +13,8 @@ function Avatars() {
         <div className="flex gap-2 items-center">
             <p className="font-light text-sm">Users currently editing this page</p>
             <div className="flex -space-x-5">
-                {all.map(other => (
-                    <TooltipProvider key={other?.id}>
+                {all.map((other, i) => (
+                    <TooltipProvider key={other?.id + i}>
                         <Tooltip>
                             <TooltipTrigger>
                                 <Avatar className="border-2 hover:z-50">

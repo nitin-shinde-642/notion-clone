@@ -17,7 +17,7 @@ function Editor() {
     const [doc, setDoc] = useState<Y.Doc>()
     const { theme } = useTheme()
     const [provider, setProvider] = useState<LiveblocksYjsProvider>()
-    const [darkMode, setDarkMode] = useState(theme == 'dark' ? true : false)
+    const [darkMode, setDarkMode] = useState(theme == 'light' ? false : true)
 
     useEffect(() => {
         const yDoc = new Y.Doc()
@@ -28,7 +28,7 @@ function Editor() {
             yDoc?.destroy()
             yProvider?.destroy()
         }
-    }, [room])
+    }, [room, theme])
     if (!doc || !provider) return null
     return (
         <div className="max-w-6xl mx-auto w-full">
