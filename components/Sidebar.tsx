@@ -79,7 +79,7 @@ function Sidebar() {
   );
 
   return (
-    <div className="p-2 md:p-5 bg-gray-200 dark:bg-gray-900 relative max-w-64 w-full">
+    <div className="p-2 md:p-5 bg-gray-200 dark:bg-gray-900 relative md:max-w-64 md:w-full">
       <div className="md:hidden">
         <Drawer direction="left">
           <DrawerTrigger>
