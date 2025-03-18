@@ -4,7 +4,7 @@ import { PointerEvent, ReactNode } from "react"
 import FollowPointer from "./FollowPointer"
 
 function LiveCursorProvider({ children }: { children: ReactNode }) {
-    const [, updateMyPresence] = useMyPresence() // eslint-disable-line no-unused-vars
+    const [, updateMyPresence] = useMyPresence()
     const others = useOthers()
     const handlePointerMove = (e: PointerEvent<HTMLDivElement>) => {
         const cursor = { x: Math.floor(e.pageX), y: Math.floor(e.pageY) }
