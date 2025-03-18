@@ -1,9 +1,6 @@
 import { ArrowLeftCircleIcon } from "lucide-react";
 
 export default function Home() {
-  const loginCredentials = [
-      'yewed65417@bankrau.com',
-  ]
   return (
     <main>
       <div className="flex space-x-2 items-center animate-pulse pb-20">
